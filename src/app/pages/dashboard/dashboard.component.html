@@ -1,0 +1,7 @@
+<!-- <p>dashboard works!</p> -->
+<app-nav></app-nav>
+<p *ngIf="!userloginOn" >Usuario NO autenticado</p>
+<p *ngIf="userloginOn" >Usuario autenticado</p>
+<div *ngIf="userloginOn" >
+    <p>Bienvenido {{userData?.lastName}}, {{userData?.name}}</p>
+</div>
